@@ -1,5 +1,5 @@
-# graphql-nodejs-newsfeed
-Example of graphql nodejs backend with newsfeed, built with hapi and sqlite
+# Genetics Server
+GraphQL server for queuering genetic data from an Sqlite database
 
 ## Set Up Database
 
@@ -27,5 +27,5 @@ $ npm start
 ## Example Query
 
 ```
-$ curl --data "query={ __schema { types { name } } }" localhost:8000
+$ curl --data "query={ snps(rsid: \"rs10865306\"){rsid, position, genotype, chromosome} }" localhost:8000
 ```

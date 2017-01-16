@@ -7,7 +7,7 @@ GraphQL server for queuering genetic data from an Sqlite database
 $ sqlite3 db.sqlite3 < scripts/createdb.sql
 ```
 
-## Init Database with genome file
+## Init Database with a 23andme genome file
 
 ```
 $ python initdb.py db.sqlite3 genome_*.txt
